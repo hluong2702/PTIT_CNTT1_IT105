@@ -1,0 +1,43 @@
+1. Xác định các tác nhân chính và chức năng tương ứng
+Tác nhân:
+Học viên
+Giảng viên
+Admin (Quản trị viên)
+Chức năng:
+Học viên:
+Đăng ký tài khoản
+Đăng ký và tham gia khóa học
+Xem bài học, làm bài kiểm tra
+Xem điểm và phản hồi giảng viên
+Giảng viên:
+Tạo và quản lý khóa học, bài học
+Cập nhật điểm cho học viên
+Theo dõi tiến độ học tập của học viên
+Admin:
+Quản lý tài khoản người dùng
+Phân quyền (Admin / Giảng viên / Học viên)
+Theo dõi báo cáo, thống kê
+Quản lý nội dung khóa học
+
+2. Phân loại hệ thống thông tin phù hợp
+Mức hệ thống	Mục đích	Loại hệ thống
+Tác nghiệp (Operational)	Xử lý đăng ký, học, nộp bài, chấm điểm	TPS
+Quản lý trung cấp	Xem thống kê, điểm, khóa học	MIS
+Quản lý cấp cao	Phân tích hiệu quả đào tạo, mở khóa học mới	DSS
+=> Hệ thống là sự kết hợp giữa TPS + MIS + DSS, trong đó TPS là cốt lõi.
+
+3. Mô hình phát triển phần mềm đề xuất: Agile
+Lý do chọn Agile:
+Yêu cầu linh hoạt, thường xuyên thay đổi (thêm tính năng mới).
+Dễ chia nhỏ công việc thành sprint, phản hồi nhanh từ người dùng.
+Phù hợp với nền tảng học trực tuyến cần cập nhật thường xuyên.
+Cho phép ra mắt phiên bản MVP nhanh và cải thiện liên tục.
+(Nếu hệ thống ít thay đổi → có thể chọn Waterfall, nhưng với học trực tuyến → Agile là tối ưu nhất.)
+
+4. Ba sơ đồ UML sử dụng trong thiết kế hệ thống
+Use Case Diagram:
+Mô tả các chức năng mà học viên, giảng viên, admin có thể thực hiện.
+Class Diagram:
+Mô tả cấu trúc hệ thống, các lớp như User, Course, Lesson, Grade, Report và mối quan hệ giữa chúng.
+Sequence Diagram:
+Mô tả trình tự tương tác giữa các đối tượng (ví dụ: học viên đăng ký khóa học → hệ thống xác nhận → lưu vào CSDL).

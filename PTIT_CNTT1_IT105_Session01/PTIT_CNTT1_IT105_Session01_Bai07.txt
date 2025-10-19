@@ -1,0 +1,89 @@
+1. Planning (Lập kế hoạch)
+Mục tiêu:
+Xây dựng hệ thống giúp người dân đăng ký tiêm online, trung tâm y tế quản lý và xếp lịch tiêm hiệu quả.
+Công việc:
+Xác định phạm vi: gồm 3 nhóm chức năng chính (đăng ký, xác nhận – xếp lịch, quản lý danh sách tiêm).
+Xác định đối tượng sử dụng: người dân, nhân viên y tế, quản trị trung tâm.
+Lập kế hoạch thời gian, ngân sách và nhân lực.
+Đánh giá rủi ro ban đầu (quá tải đăng ký, bảo mật thông tin cá nhân).
+Kết quả:
+→ Báo cáo kế hoạch dự án (Project Plan).
+
+2. Analysis (Phân tích yêu cầu)
+Mục tiêu:
+Hiểu rõ yêu cầu nghiệp vụ và xác định chức năng chi tiết của hệ thống.
+Công việc:
+Thu thập yêu cầu từ trung tâm y tế và người dân.
+Xác định yêu cầu chức năng:
+Người dân: đăng ký thông tin cá nhân, chọn loại vaccine, nhận lịch tiêm.
+Nhân viên trung tâm: xác nhận đăng ký, xếp lịch tiêm, cập nhật trạng thái tiêm.
+Quản trị: xem báo cáo, thống kê người đã/ chưa tiêm.
+Xác định yêu cầu phi chức năng:
+Bảo mật thông tin cá nhân.
+Giao diện dễ sử dụng, hoạt động ổn định trên web và mobile.
+
+Kết quả:
+→ Tài liệu đặc tả yêu cầu phần mềm (SRS – Software Requirement Specification).
+
+3. Design (Thiết kế hệ thống)
+Mục tiêu:
+Xây dựng mô hình kiến trúc, cơ sở dữ liệu và giao diện người dùng.
+Công việc:
+Thiết kế tổng thể: mô hình 3 lớp (frontend – backend – database).
+Thiết kế CSDL:
+Users(id, name, phone, address, vaccine_type, status)
+Appointments(id, user_id, date, location, status)
+Vaccines(id, name, quantity, expiration_date)
+Thiết kế giao diện (UI):
+Trang đăng ký tiêm cho người dân.
+Trang xác nhận và xếp lịch cho nhân viên.
+Trang báo cáo thống kê cho quản trị.
+Thiết kế sơ đồ UML:
+Use Case Diagram (mô tả chức năng người dùng).
+Class Diagram (mô hình dữ liệu).
+Sequence Diagram (quy trình xác nhận đăng ký).
+
+Kết quả:
+→ Tài liệu thiết kế hệ thống (System Design Document).
+
+4. Implementation (Triển khai / Lập trình)
+Mục tiêu:
+Phát triển hệ thống dựa trên bản thiết kế đã phê duyệt.
+Công việc:
+Chia nhóm lập trình: frontend, backend, database.
+Phát triển các module chính:
+Module đăng ký tiêm cho người dân.
+Module xác nhận & xếp lịch của trung tâm.
+Module quản lý & thống kê.
+Tích hợp các API xác nhận thông tin và gửi SMS/email lịch tiêm.
+Công nghệ đề xuất:
+Frontend: ReactJS / VueJS
+Backend: Node.js / Spring Boot
+Database: MySQL / PostgreSQL
+
+Kết quả:
+→ Bản chạy thử (Prototype) hoặc phiên bản Beta của hệ thống.
+
+5. Testing (Kiểm thử)
+Mục tiêu:
+Đảm bảo hệ thống hoạt động đúng yêu cầu và không có lỗi nghiêm trọng.
+Công việc:
+Unit Testing: kiểm tra từng module riêng lẻ.
+Integration Testing: kiểm tra sự tương tác giữa các module.
+System Testing: chạy thử toàn hệ thống.
+User Acceptance Testing (UAT): mời trung tâm y tế và người dùng thật thử nghiệm.
+
+Kết quả:
+→ Báo cáo kiểm thử (Test Report) & hệ thống đã sẵn sàng triển khai.
+
+6. Deployment & Maintenance (Triển khai và bảo trì)
+Mục tiêu:
+Đưa hệ thống vào hoạt động chính thức và đảm bảo vận hành ổn định lâu dài.
+Công việc:
+Triển khai hệ thống lên máy chủ trung tâm y tế.
+Đào tạo nhân viên sử dụng hệ thống.
+Theo dõi hoạt động và phản hồi người dùng.
+Cập nhật định kỳ: thêm tính năng, vá lỗi bảo mật, nâng cấp hiệu suất.
+
+Kết quả:
+→ Hệ thống vận hành chính thức & kế hoạch bảo trì lâu dài.

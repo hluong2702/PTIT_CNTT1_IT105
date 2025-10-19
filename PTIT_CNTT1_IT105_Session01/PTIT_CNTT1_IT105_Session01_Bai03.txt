@@ -1,0 +1,33 @@
+Thành phần 1: Con người (People)
+Mô tả: Bao gồm tất cả những người tham gia và sử dụng hệ thống:
+Khách hàng: người đặt món ăn qua ứng dụng.
+Nhà hàng / quán ăn: nhận đơn, chuẩn bị món.
+Tài xế giao hàng: nhận đơn, giao món.
+Nhân viên quản trị hệ thống: theo dõi, xử lý sự cố, cập nhật dữ liệu.
+
+Thành phần 2: Dữ liệu (Data)
+Mô tả: Là thông tin được thu thập, lưu trữ và xử lý trong hệ thống, gồm:
+Thông tin người dùng (tài khoản, địa chỉ, số điện thoại).
+Danh sách món ăn, giá, khuyến mãi.
+Đơn hàng, trạng thái giao hàng, đánh giá.
+Lịch sử thanh toán, thông tin doanh thu.
+
+Thành phần 3: Quy trình (Procedures)
+Mô tả: Là các bước hoặc quy tắc vận hành hệ thống:
+Người dùng đăng nhập và đặt món.
+Hệ thống gửi đơn đến nhà hàng.
+Nhà hàng xác nhận → tài xế nhận đơn.
+Tài xế giao hàng → người dùng thanh toán và đánh giá.
+Dữ liệu được cập nhật và báo cáo doanh thu.
+
+Thành phần 4: Phần mềm (Software)
+Mô tả: Bao gồm các chương trình và ứng dụng giúp hệ thống hoạt động:
+Ứng dụng mobile/web đặt món cho khách hàng.
+Ứng dụng dành cho tài xế và nhà hàng.
+Hệ thống máy chủ quản lý đơn hàng, định vị, thanh toán online.
+
+Thành phần 5: Phần cứng (Hardware)
+Mô tả: Là thiết bị vật lý hỗ trợ vận hành hệ thống:
+Điện thoại thông minh, máy tính bảng của khách hàng, tài xế, nhà hàng.
+Máy chủ (server), router, hệ thống mạng Internet.
+Thiết bị lưu trữ dữ liệu, máy in hóa đơn (nếu có).

@@ -1,0 +1,88 @@
+PHÂN TÍCH HỆ THỐNG QUẢN LÝ ĐƠN HÀNG DOANH NGHIỆP LOGISTIC
+
+1. CÁC TÁC NHÂN (ACTORS) VÀ CHỨC NĂNG CHÍNH
+
+- KHÁCH HÀNG:
+  + Tạo đơn hàng (nhập thông tin, địa chỉ, chọn dịch vụ)
+  + Thanh toán / chọn phương thức thanh toán
+  + Theo dõi trạng thái đơn hàng (tracking)
+  + Gửi khiếu nại hoặc yêu cầu hỗ trợ
+
+- NHÂN VIÊN VẬN CHUYỂN:
+  + Nhận đơn được phân công
+  + Cập nhật trạng thái giao hàng (lấy hàng, đang giao, giao thành công, thất bại)
+  + Ghi nhận bằng chứng giao hàng (ảnh, chữ ký, mã OTP)
+  + Báo cáo sự cố giao hàng
+
+- NHÂN VIÊN ĐIỀU PHỐI:
+  + Phân công đơn hàng cho tài xế
+  + Giám sát trạng thái tuyến đường và khu vực
+  + Quản lý hàng tồn, xử lý đơn chậm
+
+- QUẢN LÝ:
+  + Xem báo cáo hiệu suất (tỉ lệ giao đúng hẹn, thời gian giao)
+  + Phân tích điểm nghẽn vận hành
+  + Cập nhật quy trình làm việc
+
+- CEO:
+  + Xem dashboard tổng quan (doanh thu, khu vực hoạt động, KPI)
+  + Ra quyết định chiến lược (mở tuyến mới, đầu tư khu vực)
+
+- HỆ THỐNG BÊN NGOÀI:
+  + Kết nối với cổng thanh toán, đối tác giao hàng, hệ thống kho.
+
+
+2. PHÂN LOẠI CHỨC NĂNG THEO HỆ THỐNG THÔNG TIN
+- Tạo đơn hàng, cập nhật trạng thái: TPS (Transaction Processing System)
+- Theo dõi đơn hàng: TPS / MIS
+- Phân công tuyến giao hàng: TPS + DSS
+- Báo cáo hiệu suất: MIS (Management Information System)
+- Phân tích nguyên nhân tồn đọng: DSS (Decision Support System)
+- Dashboard tổng quan cho CEO: EIS (Executive Information System)
+- Lưu trữ bằng chứng giao hàng: TPS
+
+
+
+3. MÔ HÌNH PHÁT TRIỂN PHẦN MỀM ĐỀ XUẤT
+- Mô hình: AGILE (Scrum) + CI/CD + Microservices
+
+Lý do:
++ Nhu cầu thay đổi thường xuyên, dễ mở rộng chức năng
++ Hệ thống có nhiều mô-đun độc lập (Order, Tracking, Report)
++ Phát triển và triển khai linh hoạt, dễ tích hợp đối tác
++ Đảm bảo hiệu năng, bảo trì, và mở rộng vùng hoạt động
++ Hỗ trợ triển khai nhanh MVP và phản hồi người dùng sớm
+
+
+4. 4 SƠ ĐỒ UML SỬ DỤNG TRONG PHÂN TÍCH THIẾT KẾ
+1. USE CASE DIAGRAM:
+   - Mô tả các tác nhân và chức năng hệ thống
+   - Giúp xác định phạm vi và yêu cầu chức năng
+
+2. CLASS DIAGRAM:
+   - Mô tả cấu trúc dữ liệu và quan hệ giữa các lớp
+   - Ví dụ: Customer, Order, Shipment, Driver, StatusRecord
+
+3. SEQUENCE DIAGRAM:
+   - Mô tả luồng tương tác theo thời gian giữa các thành phần
+   - Ví dụ: Khách tạo đơn → Hệ thống phân công → Tài xế giao hàng → Cập nhật trạng thái
+
+4. DEPLOYMENT DIAGRAM:
+   - Mô tả cách hệ thống triển khai trên các máy chủ, dịch vụ cloud
+   - Các node: Web/Mobile App, API Gateway, Order Service, Tracking DB, Message Queue
+
+
+5. LUỒNG NGHIỆP VỤ CƠ BẢN
+1. Khách hàng tạo đơn → TPS lưu dữ liệu đơn hàng
+2. Dispatch Service phân công tài xế
+3. Tài xế cập nhật trạng thái giao hàng
+4. Tracking Service hiển thị thông tin cho khách hàng
+5. MIS tổng hợp báo cáo → DSS phân tích dữ liệu
+6. CEO xem dashboard trên EIS
+
+
+6. KẾT LUẬN
+- Hệ thống chia thành nhiều tầng: TPS (ghi nhận), MIS (báo cáo), DSS (phân tích), EIS (quyết định)
+- Mô hình Agile giúp phát triển nhanh, linh hoạt, dễ mở rộng
+- Các sơ đồ UML (Use Case, Class, Sequence, Deployment) đảm bảo thiết kế rõ ràng, thống nhất
+- Ưu tiên triển khai mô-đun Order & Tracking trước để đạt MVP sớm.

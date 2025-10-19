@@ -1,0 +1,12 @@
+1. Giao dịch bán hàng
+Loại hệ thống: TPS (Transaction Processing System)
+Giải thích: TPS ghi nhận và xử lý các giao dịch hằng ngày như bán hàng, thanh toán, nhập – xuất kho,…
+
+2. Phân tích xu hướng kinh doanh
+
+Loại hệ thống: DSS (Decision Support System)
+Giải thích: DSS giúp phân tích dữ liệu, mô phỏng, dự báo xu hướng để hỗ trợ ra quyết định trong những tình huống không cấu trúc hoặc bán cấu trúc.
+
+3. Bảng tổng quan hiệu suất hàng tháng dành cho CEO
+Loại hệ thống: EIS (Executive Information System) hoặc ESS (Executive Support System)
+Giải thích: EIS cung cấp thông tin tổng hợp ở mức chiến lược, dưới dạng báo cáo, biểu đồ, dashboard, giúp CEO theo dõi hiệu suất và tình hình tổng thể của doanh nghiệp.

@@ -1,0 +1,29 @@
+1. Planning (Lập kế hoạch)
+Xác định mục tiêu của dự án: xây dựng ứng dụng giúp giáo viên điểm danh nhanh và chính xác.
+Xác định phạm vi, nguồn lực, thời gian và ngân sách.
+Lập kế hoạch tổng thể cho các giai đoạn phát triển.
+
+2. Analysis (Phân tích yêu cầu)
+Thu thập yêu cầu từ người dùng (giáo viên, sinh viên, phòng đào tạo).
+Xác định các chức năng chính: đăng nhập, tạo lớp học, điểm danh, xem lịch sử, thống kê chuyên cần.
+Phân tích luồng dữ liệu và quy tắc nghiệp vụ.
+
+3. Design (Thiết kế hệ thống)
+Thiết kế giao diện người dùng (UI/UX): màn hình điểm danh, danh sách lớp, thống kê.
+Thiết kế kiến trúc hệ thống và cơ sở dữ liệu (bảng sinh viên, lớp học, buổi điểm danh).
+Chuẩn bị sơ đồ ERD, sơ đồ luồng dữ liệu, wireframe.
+
+4. Implementation (Lập trình / Xây dựng)
+Viết mã nguồn cho ứng dụng (frontend + backend).
+Tạo API để kết nối cơ sở dữ liệu.
+Xây dựng các chức năng: đăng nhập, điểm danh, lưu dữ liệu, xem báo cáo chuyên cần.
+
+5. Testing (Kiểm thử)
+Kiểm tra lỗi trong từng module (unit test).
+Kiểm thử tích hợp toàn hệ thống.
+Mời người dùng thử nghiệm (UAT) để đảm bảo ứng dụng hoạt động đúng yêu cầu.
+
+6. Deployment & Maintenance (Triển khai & Bảo trì)
+Triển khai ứng dụng lên server hoặc cửa hàng ứng dụng.
+Hướng dẫn giáo viên và sinh viên sử dụng.
+Theo dõi, sửa lỗi, cập nhật tính năng mới dựa trên phản hồi thực tế.

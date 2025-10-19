@@ -1,0 +1,27 @@
+**Dự án A – Phần mềm quản lý điểm cho trường cấp 2, yêu cầu rõ ràng
+Mô hình phù hợp: Waterfall (mô hình thác nước)
+
+Lý do chọn:
+Yêu cầu đã rõ ràng, ổn định, ít thay đổi.
+Dự án có quy trình tuần tự, dễ kiểm soát tiến độ.
+Thích hợp cho dự án quy mô vừa hoặc nhỏ, môi trường ít biến động.
+Giải thích ngắn: Waterfall hiệu quả khi biết rõ đầu vào – đầu ra, mỗi giai đoạn hoàn thành trước khi chuyển sang giai đoạn tiếp theo.
+
+**Dự án B – Ứng dụng mobile đặt lịch khám bệnh, yêu cầu linh hoạt
+Mô hình phù hợp: Agile (mô hình linh hoạt)
+
+Lý do chọn:
+Yêu cầu thay đổi thường xuyên theo phản hồi người dùng.
+Cần ra mắt MVP nhanh, có thể cập nhật liên tục.
+Thích hợp cho startup hoặc dự án hướng người dùng, cần tốc độ và linh hoạt.
+Giải thích ngắn: Agile cho phép phát triển theo vòng lặp (iteration), thường xuyên nhận phản hồi và cải tiến sản phẩm.
+
+**Dự án C – Hệ thống ngân hàng điện tử có bảo mật và độ phức tạp cao
+
+Mô hình phù hợp: Spiral (mô hình xoắn ốc)
+
+Lý do chọn:
+Dự án phức tạp, quy mô lớn, rủi ro cao (bảo mật, an toàn dữ liệu).
+Cần phân tích rủi ro kỹ lưỡng ở từng giai đoạn.
+Cho phép lặp lại, cải tiến liên tục qua nhiều vòng xoắn ốc.
+Giải thích ngắn: Spiral kết hợp ưu điểm của Waterfall + Prototyping, đồng thời ưu tiên quản lý rủi ro.

@@ -1,0 +1,54 @@
+1. Planning (Lập kế hoạch)
+Mục tiêu:
+Xây dựng hệ thống điểm danh tự động bằng QR code để tiết kiệm thời gian và giảm gian lận trong điểm danh.
+Công việc thực hiện:
+Xác định phạm vi dự án:
+Giảng viên: tạo buổi học, tạo mã QR, quét mã sinh viên.
+Sinh viên: đăng nhập, quét mã QR để điểm danh.
+Phòng đào tạo: xem thống kê chuyên cần, báo cáo lớp học.
+Xác định nhóm tham gia:
+Nhóm phát triển phần mềm (developer, tester, UI/UX).
+Đại diện giảng viên, sinh viên, phòng đào tạo.
+Lập kế hoạch thời gian & nguồn lực:
+Phân chia công việc theo sprint (nếu áp dụng Agile).
+Dự kiến hoàn thành MVP sau 8–10 tuần.
+
+🔍 2. Requirement Analysis (Phân tích yêu cầu)
+Mục tiêu:
+Thu thập và mô tả yêu cầu chức năng & phi chức năng của hệ thống.
+a. Yêu cầu chức năng (Functional Requirements):
+Giảng viên có thể:
+Tạo buổi học mới.
+Sinh mã QR điểm danh cho từng buổi học.
+Xem danh sách sinh viên đã điểm danh.
+Sinh viên có thể:
+Đăng nhập vào ứng dụng.
+Quét mã QR của buổi học để điểm danh.
+Xem lịch sử điểm danh của mình.
+Phòng đào tạo có thể:
+Xem báo cáo chuyên cần của từng lớp.
+Xuất thống kê điểm danh theo học kỳ.
+b. Yêu cầu phi chức năng (Non-functional Requirements):
+Ứng dụng hoạt động trên mobile (Android/iOS).
+Đảm bảo bảo mật dữ liệu người dùng.
+Hỗ trợ nhiều người dùng truy cập cùng lúc.
+c. Xác định sơ đồ UML phù hợp:
+Use Case Diagram
+Mô tả sơ đồ Use Case (tóm tắt):
+Tác nhân (Actors): Giảng viên, Sinh viên, Phòng đào tạo.
+Các Use Case chính:
+Giảng viên: Tạo buổi học → Sinh mã QR → Xem danh sách điểm danh.
+Sinh viên: Quét mã QR → Xem lịch sử điểm danh.
+Phòng đào tạo: Xem báo cáo thống kê.
+
+3. System Design (Thiết kế hệ thống)
+Mục tiêu:
+Xây dựng mô hình tổng thể của hệ thống (kiến trúc, cơ sở dữ liệu, giao diện).
+a. Thiết kế kiến trúc hệ thống:
+Mô hình 3 lớp (Three-tier):
+Frontend: Ứng dụng web/mobile (React Native hoặc Flutter).
+Backend: API xử lý logic (Node.js, Java Spring hoặc .NET).
+Database: Lưu trữ thông tin lớp, buổi học, sinh viên, điểm danh (MySQL/PostgreSQL).
+b. Thiết kế cơ sở dữ liệu (Database Design)
+c. UML sơ đồ thiết kế:
+Class Diagram (Sơ đồ lớp) – biểu diễn các thực thể như Student, Lecturer, Session, Attendance và mối quan hệ giữa chúng.
