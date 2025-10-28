@@ -1,0 +1,30 @@
+*Tên Use Case:Đăng nhập
+
+*Actor:
+- Người dùng
+-Hệ thống
+
+*Mục tiêu:
+Người dùng đăng nhập vào hệ thống để truy cập và sử dụng các chức năng, dịch vụ của hệ thống.
+*Luồng chính:
+1. Người dùng mở trang đăng nhập.
+2. Hệ thống hiển thị giao diện đăng nhập gồm ô nhập tên đăng nhập và mật khẩu.
+3. Người dùng nhập tên đăng nhập và mật khẩu.
+4. Người dùng nhấn nút “Đăng nhập”.
+5. Hệ thống kiểm tra thông tin đăng nhập:
+-Nếu thông tin hợp lệ, hệ thống xác thực tài khoản.
+6. Hệ thống hiển thị thông báo “Đăng nhập thành công”.
+7. Người dùng được chuyển đến trang chủ hoặc trang chức năng chính của hệ thống.
+
+*Luồng lỗi:
+
+-Tên đăng nhập hoặc mật khẩu sai:
+  1. Hệ thống hiển thị thông báo “Tên đăng nhập hoặc mật khẩu không chính xác”.
+  2. Người dùng quay lại giao diện đăng nhập để nhập lại thông tin.
+
+-Tài khoản bị khóa hoặc chưa kích hoạt:
+  1. Hệ thống hiển thị thông báo “Tài khoản của bạn hiện không thể đăng nhập”.
+  2. Người dùng liên hệ quản trị viên hoặc thực hiện kích hoạt tài khoản (nếu có).
+-Kết nối hệ thống bị lỗi:
+  1. Hệ thống hiển thị thông báo “Không thể kết nối đến máy chủ. Vui lòng thử lại sau.”
+  2. Người dùng thử đăng nhập lại sau.
